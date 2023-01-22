@@ -35,10 +35,6 @@
 
 	};
 
-	void Auteur::tostring(){
-
-		std::cout<<"l'auteurs s'appelle "<< _prenom <<" " << _nom <<std::endl ;
-	};
 	
 
 	std::ostream& operator << (std::ostream& os, const Auteur& a){

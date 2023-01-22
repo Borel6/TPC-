@@ -31,11 +31,10 @@ public:
 
 
 		private :
-
-	std::string _nom;
 	std::string _prenom;
-	int _identifiantnumerique;
+	std::string _nom;
 	Date _datedenaissance;
+	int _identifiantnumerique;
 
 
 };

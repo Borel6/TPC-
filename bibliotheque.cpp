@@ -102,7 +102,7 @@ std::ostream& operator << (std::ostream& os, const Bibliotheque& B){
 
 
 void Bibliotheque::livreDeLauteur (Auteur A){
- std::cout<<"Les livres [Livre(ISBN)] ecrits par "<< A.getprenom() <<" "<<A.getnom() <<" sont : "<<std::endl;
+ std::cout<<"Les livres ecrits par "<< A.getprenom() <<" "<<A.getnom() <<" sont : "<<std::endl;
  for (int i = 0; i < _livres.size(); i++)
  {
   if (_livres.at(i).getnameAuteur() ==A)
@@ -116,7 +116,7 @@ void Bibliotheque::livreDeLauteur (Auteur A){
 
  
 		void Bibliotheque::livreEmprunteLecteur (Lecteur L){
-			  std::cout<<"Les livres [Livre(ISBN)] empruntés  par "<< L.prenom() <<" "<<L.nom() <<" sont : "<<std::endl;
+			  std::cout<<"Les livres empruntés  par "<< L.prenom() <<" "<<L.nom() <<" sont : "<<std::endl;
  for (int j=0; j < L.get_listeibsn().size(); j++)				  
  for (int i = 0; i < _livres.size(); i++)
  {
@@ -135,6 +135,11 @@ void Bibliotheque::bestreader() {
 	std::sort(_utilisateurs.begin(), 
 	_utilisateurs.end(), 
 	[](Lecteur& l1, Lecteur& l2) { return l1 < l2;});
+
+for (int i = 0; i < _utilisateurs.size(); ++i)
+{
+    std::cout<<_utilisateurs.at(i).id();
+}
 }
 
 
@@ -144,7 +149,7 @@ void Bibliotheque::pourcentageLivre(){
  float moyenne=0;
  float nb=0;
  
- std::cout<<"Les livres [Livre(ISBN] empruntes sont : "<<std::endl;
+ std::cout<<"Les livres empruntes sont : "<<std::endl;
  for (int i = 0; i < _livres.size() ; i++)
  {
   if (_livres.at(0).getdispo()==false)

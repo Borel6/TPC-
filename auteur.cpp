@@ -26,7 +26,6 @@
 
 
 	Date Auteur::getdatenaissance() const{
-		return _datedenaissance;
 	}; 
 
 	

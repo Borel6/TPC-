@@ -59,21 +59,21 @@ B.emprunt(lec1, l9);
 B.emprunt(lec2, l4);
 B.emprunt(lec2, l5);
 B.emprunt(lec2, l8);
-//B.emprunt(lec3, l9);
-
-//std::cout<<lec1.get_listeibsn().size() << std::endl ;
-//std::cout<<lec2.get_listeibsn().size() ;
+B.emprunt(lec3, l9);
 
 
 if(lec2 > lec1){
-	std::cout<< "ok" <<std::endl ;
+	std::cout<< "ok pour la surcharge" <<std::endl ;
 };
 
-//std::cout<< B.get_emprunt().at(0) << std::endl ;
+std::cout<< B.get_emprunt().at(0) << std::endl ;
 
-//B.livreDeLauteur(JPS) ;
-//B.livreEmprunteLecGteur(lec1);
 B.bestreader();
+
+
+std::cout<< lec1.get_listeibsn().size()<<std::endl ;
+std::cout<< lec3.get_listeibsn().size()<<std::endl ;
+std::cout<< lec2.get_listeibsn().size()<<std::endl ;
 
 
 
